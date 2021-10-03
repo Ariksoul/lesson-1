@@ -1,0 +1,88 @@
+/*
+Задание:
+1. Первая буква, каждого абзаца статьи должна иметь больший шрифт и быть красной.
+*/
+h1::first-letter,
+h2::first-letter
+{
+  font-size: 2em;
+  color: red;
+}
+
+/*
+2. Заголовок "Огород" должен быть оранжевым
+*/
+#allotment h2
+{
+  color: orange;
+}
+
+/*
+3. Слова "Фрукты" и "Овощи" жирным шрифтом, черного цвета.
+*/
+#allotment ul:first-child
+{
+  font-weight: bold;
+  color: black;
+}
+
+/*
+4. В разделе "Огород" список фруктов должен быть серым, а овощей зеленым.
+*/
+#allotment .fruits-list
+{
+  color: gray;  
+}
+
+.vegetables-list
+{
+  color: green;
+}
+
+/*
+5. В разделе "Склад" список фруктов должен быть оранжевым, а овощей коричневым.
+*/
+#warehouse .fruits-list
+{
+  color: orange;  
+}
+#warehouse .vegetables-list
+{
+  color: brown;
+}
+
+/*
+6. Заголовки таблицы должны быть жирными и черными. Текст должен центрироваться.
+6.1. Имена студентов зелеными
+6.2. Четные строки должны получить голубой фон.
+6.3. Отметки посещения должны центрироваться.
+6.4. Наведение мышки на отметку должно менять фон ячейки на красный, а цвет текста делать белым.
+*/
+h1,
+h2
+{
+  font-weight: bold;
+  color: black;
+  text-align: center;
+}
+
+.students-table tbody tr td:first-child
+{
+  color: green;
+}
+
+tr:nth-child(2n + 1)
+{
+  background: lightblue;
+}
+
+.students-table tbody tr td:nth-child(n+2)
+{
+  text-align: center;
+}
+
+.students-table tbody tr td:nth-child(n+2):hover
+{
+  background: red;
+  color: white;
+}

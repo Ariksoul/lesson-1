@@ -2,3 +2,7 @@
 {
     font-size: 10px;
 }
+
+img {
+    background-attachment: fixed;
+}
